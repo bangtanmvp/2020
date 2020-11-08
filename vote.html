@@ -1,9 +1,65 @@
- <hr>  
+<html>
 
-        <br>
-        <div>
 
-        <button id="vote">Vote MAMA</button>
+
+<head>
+
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
+
+</head>
+
+
+
+<body>
+
+    <h3>Sign out from SNS</h3>
+
+    <div><a href="https://accounts.kakao.com/logout?continue=https://bangtanmvp.github.io/2020/123.html">Sign out from Kakao</a></div>
+
+    <div><a href="https://nid.naver.com/nidlogin.logout?returl=https://bangtanmvp.github.io/2020/123.html">Sign out from Naver</a></div>
+
+    <div><a href="https://www.tumblr.com/logout" target="_blank">Sign out from Tumblr (in new tab)</a></div>
+    
+    <div><a href="https://www.twitter.com/logout?returl=https://bangtanmvp.github.io/2020/123.html">Sign out from Twitter</a><div/>
+
+    <hr>
+    
+        <h3>Mnet Sign In/Sign Out</h3>
+    <div>
+
+        <a href="https://www.mwave.me/en/signin?redirectUrl=https://bangtanmvp.github.io/2020/123.html">Sign in</a>
+
+    </div>
+
+    <div>
+
+        <a href="https://www.mwave.me/signout" target="_blank">Sign out (in new tab)</a>
+
+    </div>
+        
+    <br>
+        
+        <p> You will not need the buttons above if you are using SessionBox </p>
+        
+    <br>
+       
+
+        
+
+   <hr>
+
+        <h3>Voting</h3>
+
+        <p>Voting buttons will NOT lead you to another tab.</p>
+
+        
+
+        </div>
+
+            
+
+ <br></br>
+ <button id="vote">Vote MAMA</button>
 
     </div>
     <script>
@@ -13,11 +69,11 @@
             form.method = "post";
             form.target = "_blank";
             
-            ["no_1=17", "no_2=53", "no_3=79", "no_4=0", "no_5=0", "no_6=30", "no_7=37", "no_8=43", "no_9=46", "no_10=56", "no_11=61", "no_12=63", "no_13=69", "no_14=74", "no_15=80", "no_16=85", "no_17=108", "no_18=147"]
+            ["1=canditate_18", "2=candidate_52", "3=candidate_107", "6=candidate_143", "11=candidate_170", "17=candidate_201"]
             .forEach((str) => {
                 const [key, value] = str.split("=");
                 const elm = document.createElement("input");
-                elm.type = "hidden";
+                elm.type = "checkbox";
                 elm.name = key;
                 elm.value = value;
                 form.appendChild(elm);
@@ -26,3 +82,11 @@
             form.submit();
         }, false);
     </script>
+
+        
+       
+ 
+    </form>
+
+</body>
+        
